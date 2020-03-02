@@ -74,7 +74,7 @@ cube(`Wine`, {
         countByRegion: {
             type: `rollup`,
             measureReferences: [Wine.count],
-            dimensionReferences: region 1
+            dimensionReferences: region1
         },
         countByVariety: {
             type: `rollup`,
