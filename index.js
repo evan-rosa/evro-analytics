@@ -12,11 +12,7 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json({ limit: '50mb' }));
 
-const options = {
-  preAggregationsSchema: ({ authInfo }) => `pre_aggregations_${authInfo.tenantId}`
-};
-
-const serverCore = CubejsServerCore.create(options);
+const serverCore = CubejsServerCore.create();
 serverCore.initApp(app);
 
 

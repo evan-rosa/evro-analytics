@@ -46,13 +46,13 @@ cube(`Wine`, {
         region1: {
             sql: `region_1`,
             type: `string`,
-            title: `Region1`
+            title: `Region 1`
         },
 
         region2: {
             sql: `region_2`,
             type: `string`,
-            title: `Region2`
+            title: `Region 2`
         },
 
         variety: {
