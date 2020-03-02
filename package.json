@@ -1,0 +1,19 @@
+{
+  "name": "analytics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "node index.js PORT=4000 NODE_ENV=production",
+    "start": "node index.js PORT=4000 NODE_ENV=production"
+  },
+  "dependencies": {
+    "@cubejs-backend/bigquery-driver": "^0.17.10",
+    "@cubejs-backend/server": "^0.17.10",
+    "dotenv": "^8.2.0",
+    "serve-static": "^1.14.1"
+  },
+  "engines": {
+    "node": "12.14.1",
+    "npm": "4.6.1"
+  }
+}
