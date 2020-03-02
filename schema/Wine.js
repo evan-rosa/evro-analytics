@@ -66,10 +66,20 @@ cube(`Wine`, {
         }
     },
     preAggregations: {
-        amountByCountry: {
+        countByCountry: {
             type: `rollup`,
             measureReferences: [Wine.count],
             dimensionReferences: country
+        },
+        countByRegion: {
+            type: `rollup`,
+            measureReferences: [Wine.count],
+            dimensionReferences: region_1
+        },
+        countByVariety: {
+            type: `rollup`,
+            measureReferences: [Wine.count],
+            dimensionReferences: variety
         }
     }
 });
