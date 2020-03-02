@@ -69,17 +69,17 @@ cube(`Wine`, {
         countByCountry: {
             type: `rollup`,
             measureReferences: [Wine.count],
-            dimensionReferences: country
+            dimensionReferences: [Wine.country]
         },
         countByRegion: {
             type: `rollup`,
             measureReferences: [Wine.count],
-            dimensionReferences: region1
+            dimensionReferences: [Wine.region1]
         },
         countByVariety: {
             type: `rollup`,
             measureReferences: [Wine.count],
-            dimensionReferences: variety
+            dimensionReferences: [Wine.variety]
         }
     }
 });
