@@ -64,22 +64,5 @@ cube(`Wine`, {
             sql: `winery`,
             type: `string`
         }
-    },
-    preAggregations: {
-        countByCountry: {
-            type: `rollup`,
-            measureReferences: [Wine.count],
-            dimensionReferences: [Wine.country]
-        },
-        countByRegion: {
-            type: `rollup`,
-            measureReferences: [Wine.count],
-            dimensionReferences: [Wine.region1]
-        },
-        countByVariety: {
-            type: `rollup`,
-            measureReferences: [Wine.count],
-            dimensionReferences: [Wine.variety]
-        }
     }
 });
